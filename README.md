@@ -52,7 +52,7 @@ The **Nextjs Component Identifier** is a Visual Studio Code extension designed t
 ## **Screenshots**
 
 ### **Client and Server Side File Decorations**
-![File Decorations](https://via.placeholder.com/600x300?text=Add+a+screenshot+of+decorations)
+![File Decorations](https://raw.githubusercontent.com/DawoodMehmood/component-type-extension/main/file-decorations.png)
 
 ---
 
