@@ -2,7 +2,7 @@
   "name": "nextjs-client-server-components-differentiator",
   "displayName": "Nextjs Component Identifier",
   "description": "Distinguishes client-side and server-side components in Next.js projects using file decorations.",
-  "publisher": "dawood-mehmood",
+  "publisher": "dawoodmehmood",
   "icon": "icon.png",
   "version": "0.0.1",
   "engines": {
