@@ -1,71 +1,98 @@
-# client-server-differentiator README
+# **Nextjs Component Identifier**
 
-This is the README for your extension "client-server-differentiator". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+The **Nextjs Component Identifier** is a Visual Studio Code extension designed to help developers working on **Next.js projects**. It visually distinguishes between **client-side** and **server-side** components in the VS Code file explorer, enhancing productivity and clarity.
 
 ---
 
-## Following extension guidelines
+## **Features**
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+- **Dynamic Decorations**:
+  - Adds a **`C` (orange)** badge for client-side components.
+  - Adds an **`S` (blue)** badge for server-side components.
+  - Displays a tooltip when you hover over the file:
+    - **Client-Side Component**
+    - **Server-Side Component**
+- **Automatic Detection**:
+  - Automatically identifies client-side and server-side files in `src` folders of your Nextjs project.
+- **Real-Time Updates**:
+  - Decorations update dynamically whenever files are saved, created, or deleted.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+---
 
-## Working with Markdown
+## **Getting Started**
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+### **Installation**
+1. Open **Visual Studio Code**.
+2. Go to the **Extensions** view by clicking the Extensions icon in the Activity Bar or pressing `Ctrl+Shift+X`.
+3. Search for **Nextjs Component Identifier**.
+4. Click **Install**.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+---
 
-## For more information
+### **Usage**
+1. Open a **Next.js project** in VS Code.
+2. Ensure your project has a `next.config.js` or `next.config.mjs` file.
+3. The extension will automatically decorate files in the `src` folder:
+   - **Orange (C)**: Client-Side.
+   - **Blue (S)**: Server-Side.
+   - Hovering over the file will display one of the following tooltips:
+     - **Client Side Component**
+     - **Server Side Component**
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+---
 
-**Enjoy!**
+### **Commands**
+
+| Command                                   | Description                                   |
+|-------------------------------------------|-----------------------------------------------|
+| `Scan for Client/Server Components` | Manually trigger the file scan and decorations. |
+
+---
+
+## **Screenshots**
+
+### **Client and Server Side File Decorations**
+![File Decorations](https://via.placeholder.com/600x300?text=Add+a+screenshot+of+decorations)
+
+---
+
+## **Requirements**
+- **Next.js Projects**:
+  - Must have a `next.config.js` or `next.config.mjs` file.
+  - Decorations are applied only in `src` folders.
+
+---
+
+## **Known Issues**
+- **Git Decorations**:
+  - If Git decorations are enabled, they might override the extension’s color changes but 'C'/'S' badge will still appear. Disable Git decorations in VS Code settings to see the colors as well:
+    ```json
+    "git.decorations.enabled": false
+    ```
+
+---
+
+## **Release Notes**
+
+### **1.0.0**
+- Initial release.
+- Automatic decoration for `src` folders in Next.js projects.
+- Dynamic updates for saved, added, or deleted files.
+
+---
+
+## **Contributing**
+
+If you encounter a bug or have suggestions for new features:
+1. Fork the repository: [GitHub Repository](https://github.com/DawoodMehmood/component-type-extension)
+2. Create a pull request with detailed changes.
+
+---
+
+## **License**
+This extension is licensed under the [MIT License](LICENSE).
+
+---
+
+## **Support**
+For issues or questions, please open an issue on the [GitHub Repository](https://github.com/DawoodMehmood/component-type-extension).
