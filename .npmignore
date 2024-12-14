@@ -1,0 +1,26 @@
+# Ignore TypeScript source files
+src/
+
+# Ignore VS Code-specific settings
+.vscode/
+
+# Ignore development-related config files
+tsconfig.json
+esbuild.js
+
+# Ignore unnecessary dotfiles
+.gitignore
+
+# Ignore test files and outputs
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Ignore log files and OS-generated files
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore build scripts and local artifacts
+*.vsix
