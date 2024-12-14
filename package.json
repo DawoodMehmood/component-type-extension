@@ -1,7 +1,9 @@
 {
-  "name": "client-server-differentiator",
-  "displayName": "client-server-differentiator",
-  "description": "",
+  "name": "nextjs-client-server-components-differentiator",
+  "displayName": "Nextjs Component Identifier",
+  "description": "Distinguishes client-side and server-side components in Next.js projects using file decorations.",
+  "publisher": "dawood-mehmood",
+  "icon": "icon.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
@@ -9,14 +11,22 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "workspaceContains:**/next.config.js",
+    "workspaceContains:**/next.config.mjs"
+  ],
+  "keywords": ["Next.js", "client-server", "file decorations", "VS Code", "extension", "client", "server", "Nextjs extension", "Nextjs"],
   "main": "./dist/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DawoodMehmood/component-type-extension"
+  },
   "contributes": {
     "commands": [
       {
-        "command": "client-server-differentiator.helloWorld",
-        "title": "Hello World"
-      }
+        "command": "clientServerDifferentiator.scanFiles",
+        "title": "Scan for Client/Server Components"
+      }      
     ]
   },
   "scripts": {
